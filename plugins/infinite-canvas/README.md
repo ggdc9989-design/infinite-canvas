@@ -1,6 +1,6 @@
-# Infinite Canvas Codex Plugin
+# 麋鹿云无限画布 Codex 插件
 
-让 Codex 可以打开并操作 Infinite Canvas。
+让 Codex 可以打开并操作麋鹿云无限画布。
 
 ## 安装
 
@@ -27,5 +27,5 @@ Windows CMD 将 `$PWD` 替换为 `%cd%`。
 安装后新建一个 Codex 任务，然后输入：
 
 ```text
-帮我打开并连接到 Infinite Canvas
+帮我打开并连接到麋鹿云无限画布
 ```

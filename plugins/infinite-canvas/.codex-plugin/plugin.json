@@ -1,29 +1,38 @@
 {
   "name": "infinite-canvas",
-  "version": "0.1.0",
-  "description": "Use Codex to read and operate Infinite Canvas through the local Canvas Agent MCP server.",
+  "version": "0.1.0+codex.20260814024158",
+  "description": "Use Codex to read and operate the MooseCloud Canvas through the local Canvas Agent MCP server.",
   "author": {
-    "name": "basketikun",
-    "url": "https://canvas.best/"
+    "name": "\u9e8b\u9e7f\u4e91",
+    "url": "https://moosecloud.cc/"
   },
-  "homepage": "https://canvas.best/",
+  "homepage": "https://moosecloud.cc/",
   "repository": "https://github.com/basketikun/infinite-canvas",
   "license": "AGPL-3.0",
-  "keywords": ["infinite-canvas", "canvas", "mcp", "agent"],
+  "keywords": [
+    "infinite-canvas",
+    "canvas",
+    "mcp",
+    "agent"
+  ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
-    "displayName": "Infinite Canvas",
-    "shortDescription": "Use Codex to operate the current Infinite Canvas board.",
-    "longDescription": "Connects Codex to the local Canvas Agent MCP server so Codex can inspect the current Infinite Canvas board, create nodes, connect flows, and trigger generation through the web canvas confirmation flow.",
-    "developerName": "basketikun",
+    "displayName": "\u9e8b\u9e7f\u4e91\u65e0\u9650\u753b\u5e03",
+    "shortDescription": "\u4f7f\u7528 Codex \u64cd\u4f5c\u5f53\u524d\u9e8b\u9e7f\u4e91\u65e0\u9650\u753b\u5e03\u3002",
+    "longDescription": "\u8fde\u63a5 Codex \u4e0e\u672c\u5730 Canvas Agent MCP \u670d\u52a1\uff0c\u8ba9 Codex \u80fd\u8bfb\u53d6\u548c\u64cd\u4f5c\u5f53\u524d\u9e8b\u9e7f\u4e91\u65e0\u9650\u753b\u5e03\u3001\u521b\u5efa\u8282\u70b9\u3001\u8fde\u63a5\u6d41\u7a0b\uff0c\u5e76\u901a\u8fc7\u7f51\u9875\u753b\u5e03\u786e\u8ba4\u89e6\u53d1\u751f\u6210\u3002",
+    "developerName": "\u9e8b\u9e7f\u4e91",
     "category": "Productivity",
-    "capabilities": ["Canvas", "MCP", "Creative Workflow"],
-    "websiteURL": "https://canvas.best/",
+    "capabilities": [
+      "Canvas",
+      "MCP",
+      "Creative Workflow"
+    ],
+    "websiteURL": "https://moosecloud.cc/",
     "defaultPrompt": [
-      "打开 Infinite Canvas",
-      "读取当前画布并总结节点结构",
-      "根据选中节点创建一组生图提示词"
+      "\u6253\u5f00\u9e8b\u9e7f\u4e91\u65e0\u9650\u753b\u5e03",
+      "\u8bfb\u53d6\u5f53\u524d\u753b\u5e03\u5e76\u603b\u7ed3\u8282\u70b9\u7ed3\u6784",
+      "\u6839\u636e\u9009\u4e2d\u8282\u70b9\u521b\u5efa\u4e00\u7ec4\u751f\u56fe\u63d0\u793a\u8bcd"
     ],
     "brandColor": "#2563EB",
     "composerIcon": "./assets/icon.png",
