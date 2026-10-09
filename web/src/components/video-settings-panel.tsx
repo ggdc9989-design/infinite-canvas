@@ -11,6 +11,8 @@ import { type AiConfig } from "@/stores/use-config-store";
 const resolutionOptions = [
     { value: "720", label: "720p" },
     { value: "480", label: "480p" },
+    { value: "1080", label: "1080p" },
+    { value: "2k", label: "2K" },
 ];
 
 const sizeOptions = [
@@ -169,7 +171,8 @@ function SeedanceVideoSettingsPanel({ config, onConfigChange, theme, showTitle, 
 }
 
 export function videoResolutionLabel(value: string) {
-    return `${normalizeVideoResolutionValue(value)}p`;
+    const resolution = normalizeVideoResolutionValue(value);
+    return resolution === "2k" ? "2K" : `${resolution}p`;
 }
 
 export function videoSizeLabel(value: string) {
@@ -193,6 +196,7 @@ export function normalizeVideoSizeValue(value: string) {
 }
 
 export function normalizeVideoResolutionValue(value: string) {
+    if (value.toLowerCase() === "2k") return "2k";
     if (value === "480p" || value === "low") return "480";
     if (value === "720p" || value === "auto" || value === "high" || value === "medium") return "720";
     return value.replace(/p$/i, "") || "720";

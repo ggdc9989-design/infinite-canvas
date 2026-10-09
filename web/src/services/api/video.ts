@@ -309,6 +309,7 @@ function normalizeVideoSize(value: string) {
 }
 
 function normalizeVideoResolution(value: string) {
+    if (value.toLowerCase() === "2k") return "2k";
     if (value === "low") return "480p";
     if (value === "auto" || value === "high" || value === "medium") return "720p";
     const resolution = value.replace(/p$/i, "") || "720";

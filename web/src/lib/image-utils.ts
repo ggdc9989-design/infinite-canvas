@@ -53,7 +53,8 @@ export function readImageMeta(dataUrl: string) {
 
 export function dataUrlToFile(image: ReferenceImage) {
     const [header, content] = image.dataUrl.split(",", 2);
-    const mimeType = header.match(/data:(.*?);base64/)?.[1] || image.type || "image/png";
+    if (!/^data:image\/[^;]+;base64$/i.test(header) || !content) throw new Error(i18n.t("apiErrors.referenceImageReadFailed"));
+    const mimeType = header.match(/data:(.*?);base64/i)?.[1] || image.type || "image/png";
     const binary = atob(content || "");
     const bytes = new Uint8Array(binary.length);
     for (let index = 0; index < binary.length; index += 1) {

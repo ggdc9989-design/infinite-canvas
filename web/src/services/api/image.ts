@@ -855,7 +855,7 @@ export async function requestEdit(config: AiConfig, prompt: string, references: 
         formData.set("background", background);
     }
     const files = await Promise.all(references.map(async (image) => dataUrlToFile({ ...image, dataUrl: await imageToDataUrl(image) })));
-    files.forEach((file) => formData.append("image", file));
+    files.forEach((file, index) => formData.append("image", file, `reference-${index + 1}.${file.type === "image/jpeg" ? "jpg" : file.type === "image/webp" ? "webp" : "png"}`));
     if (mask) formData.set("mask", dataUrlToFile(mask));
 
     try {

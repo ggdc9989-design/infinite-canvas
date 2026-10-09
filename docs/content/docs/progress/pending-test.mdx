@@ -31,3 +31,9 @@ The current release needs manual verification in these areas:
 - Local storage settings: the Settings page should provide a Local storage tab that reads only the `infinite-canvas` database and shows IndexedDB usage, total site usage, browser quota, quota percentage, and per-object-store record counts and content size; refreshing after local data changes should update the figures without blocking the rest of the page.
 
 The Chinese version contains the complete item-by-item acceptance checklist.
+
+## 参考图请求与视频清晰度
+
+- 普通视频配置新增 1080p、2K；选择 2K 后 API 和模型脚本参数必须为 `2k`，不能变成 `2kp`，已有模型仍需按渠道实际支持的档位选择。
+- 普通图片编辑 multipart 使用固定参考图文件名，不再把节点标题写入文件名；空或非法 data URL 应在本地提示参考图读取失败。此项是上传健壮性修正，尚未证明原始 `image file is required` 错误已解决，需核对实际所选渠道与模型脚本的请求。
+- 按项目要求未运行语法检查、测试或构建，也未验证真实生成。
