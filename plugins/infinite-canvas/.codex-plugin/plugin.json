@@ -8,13 +8,8 @@
   },
   "homepage": "https://moosecloud.cc/",
   "repository": "https://github.com/basketikun/infinite-canvas",
-  "license": "AGPL-3.0",
-  "keywords": [
-    "infinite-canvas",
-    "canvas",
-    "mcp",
-    "agent"
-  ],
+  "license": "MIT",
+  "keywords": ["infinite-canvas", "canvas", "mcp", "agent"],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {

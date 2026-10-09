@@ -1,8 +1,10 @@
-# 麋鹿云无限画布 Codex 插件
+# 麋鹿云无限画布插件
 
-让 Codex 可以打开并操作麋鹿云无限画布。
+让 Codex / ZCode 可以打开并操作麋鹿云无限画布。
 
 ## 安装
+
+### Codex
 
 macOS / Linux：
 
@@ -24,7 +26,13 @@ codex plugin add infinite-canvas@infinite-canvas-local
 
 Windows CMD 将 `$PWD` 替换为 `%cd%`。
 
-安装后新建一个 Codex 任务，然后输入：
+### ZCode
+
+- 打开 **Settings → Plugin Management → Discover**，点击右上角 **`+`** 添加 marketplace。
+- 选择 **本仓库目录**（`plugins/infinite-canvas`）或本仓库根目录，即可发现 `infinite-canvas` 插件并安装。
+- 或在 ZCode 界面直接以本地目录方式加载该插件目录。
+
+安装后新建一个任务，然后输入：
 
 ```text
 帮我打开并连接到麋鹿云无限画布
